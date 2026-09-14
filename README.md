@@ -4,10 +4,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-30d158?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Skills: 95+](https://img.shields.io/badge/Skills-95+_Production-ff9f0a?style=for-the-badge)](./skills/)
 [![Subagents: 9](https://img.shields.io/badge/Subagents-9_Specialists-af52de?style=for-the-badge)](./subagents/)
-[![Algorithms: 7](https://img.shields.io/badge/Algorithms-7_Canonical-ff3b30?style=for-the-badge)](./algorithms/)
+[![Algorithms: 8](https://img.shields.io/badge/Algorithms-8_Canonical-ff3b30?style=for-the-badge)](./algorithms/)
 [![Architecture: Multi--Agent](https://img.shields.io/badge/Architecture-Multi--Agent_Triad-5856d6?style=for-the-badge)](./subagents/critic-triad/)
 
-> **Antigravity Master Framework** is an open-source, modular multi-agent engineering standard and skill marketplace for **Google Antigravity, Claude Code, Cursor, and autonomous AI coding agents**. It provides a battle-tested library of **95+ autonomous skills**, **the Critic Triad subagent council**, **7 deterministic algorithms**, and **engineering discipline rules** to eliminate AI hallucinations, code bloat, and fragile abstractions.
+> **Antigravity Master Framework** is an open-source, modular multi-agent engineering standard and skill marketplace for **Google Antigravity, Claude Code, Cursor, and autonomous AI coding agents**. It provides a battle-tested library of **95+ autonomous skills**, **the Critic Triad subagent council**, **8 deterministic algorithms**, and **engineering discipline rules** to eliminate AI hallucinations, code bloat, and fragile abstractions.
 
 ---
 
@@ -17,12 +17,12 @@
 flowchart TD
     Hub["👑 Antigravity Master Framework v2.6"] --> S["🧰 1. 95+ Production Skills<br/>(skills/)"]
     Hub --> A["🤖 2. Subagents Arsenal<br/>(subagents/)"]
-    Hub --> Alg["⚡ 3. The 7 Algorithms<br/>(algorithms/)"]
+    Hub --> Alg["⚡ 3. The 8 Algorithms<br/>(algorithms/)"]
     Hub --> R["📜 4. Rules & Design Contracts<br/>(rules/)"]
 
     S --> S1["Python, TypeScript, C++, Rust, Go, Docker, Web, Design, XLSX, DOCX, etc."]
     A --> A1["🔴 Skeptic + 🟢 Pragmatist + 🔵 Specialist + Architect + Security + QA"]
-    Alg --> Alg1["Master-Cycle, 5-Step Deep Reasoning, 7-Step Pipeline, TDD, Systematic Debugging"]
+    Alg --> Alg1["Master-Cycle, Deep Reasoning, 7-Step Pipeline, TDD, Debugging, HydraFusion"]
     R --> R1["Karpathy Simplicity First, Apple Cupertino Design, ADR, Compound Memory"]
 ```
 
@@ -84,8 +84,7 @@ flowchart TD
   - 🏛 [`architect`](./subagents/specialists/architect.md) — Архитектор систем и Ports & Adapters.
   - 🧹 [`code_reviewer`](./subagents/specialists/code_reviewer.md) — Рецензент чистоты кода.
   - 🛡️ [`security_reviewer`](./subagents/specialists/security_reviewer.md) — Аудитор OWASP уязвимостей.
-  - 🎯 [`silent_failure_hunter`](./subagents/specialists/silent_failure_hunter.md) — Охотник за проглоченными `try/except: pass`.
-  - 🔬 [`systematic_debugger`](./subagents/specialists/systematic_debugger.md) — Диагност первопричин багов.
+  - 🎯 [`silent_failure_hunter`](./subagents/specialists/silent_failure_hunter.md) — Охотник за проглоченными `try/except: pass`.\n  - 🔬 [`systematic_debugger`](./subagents/specialists/systematic_debugger.md) — Диагност первопричин багов.
   - 🧪 [`qa_automator`](./subagents/specialists/qa_automator.md) — Инженер автоматизированных тестов.
 
 ---
@@ -99,6 +98,7 @@ flowchart TD
 5. [`05_SYSTEMATIC_DEBUGGER.md`](./algorithms/05_SYSTEMATIC_DEBUGGER.md) — Гипотетико-дедуктивный метод отладки.
 6. [`06_BENCHMARK_LOOP.md`](./algorithms/06_BENCHMARK_LOOP.md) — Измеримый цикл оптимизации производительности.
 7. [`07_RALPH_HARNESS.md`](./algorithms/07_RALPH_HARNESS.md) — Защита от деградации контекста (Context Rot Defense).
+8. [`08_HYDRAFUSION_ROUTING.md`](./algorithms/08_HYDRAFUSION_ROUTING.md) — Адаптивная мульти-модельная оркестрация в рантайме (Single, Cascade, Critique).
 
 ---
 
@@ -141,8 +141,4 @@ mkdir -p ~/.claude/skills/critic-triad
 cp -r antigravity-master-framework/skills/critic-triad/* ~/.claude/skills/critic-triad/
 ```
 
----
-
-## 📜 Лицензия
-
-Распространяется под свободной лицензией **MIT License**. Свободно для личного и коммерческого использования, адаптации и форков.
+---\n\n## 📜 Лицензия\n\nРаспространяется под свободной лицензией **MIT License**. Свободно для личного и коммерческого использования, адаптации и форков.\n

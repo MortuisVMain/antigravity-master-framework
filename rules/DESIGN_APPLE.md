@@ -83,13 +83,13 @@ graph TD
 
 ---
 
-## 🧩 4. Адаптация Спецификации под Стек Проектов
+## 🧩 4. Адаптация Спецификации под Стек Технологий
 
-| Проект | Технология | Реализация Apple-стиля |
+| Стек Технологий | Тип Интерфейса | Реализация Apple Cupertino Стиля |
 | :--- | :--- | :--- |
-| **`ScreenDimmer Pro`** | C# .NET / Win32 Forms | Плавающий наэкранный HUD в виде Dynamic Island с матовым фоном (`#1c1c1e`), скругленными краями 18px, мягким белым текстом и иконкой солнца. |
-| **`open-steam-idler`** | Electron / React / Tailwind | Полупрозрачный сайдбар `backdrop-blur-2xl`, палитра Space Gray, сквирклы 16px, переключатели в стиле iOS Toggle, живые счетчики с `tnum`. |
-| **`ApplePowerSuite`** | Python Tkinter / GUI | Виджет в стиле macOS Sequoia Control Center: матовый фон, скругленные кнопки, мягкая шкала отсчета. |
-| **`Wallpaper Downloader`** | Userscript / CSS | Парящий по центру Dynamic Island Dock с эффектом `backdrop-filter: blur(24px)`, сегментированные переключатели (1080p / 4K / All). |
-| **`Video Downloader`** | Userscript / CSS | Панель в стиле Apple Control Center с аккуратным индикатором 16-поточной закачки Aria2. |
-| **`Cashflow Hub`** | Python / Rich CLI & Web | Чистая Apple-стилизация терминального вывода (минималистичные рамки, пастельные акценты) + шаблон субтитров SF Pro. |
+| **C# .NET / Win32 / WPF** | Десктопные окна и OSD HUD | Плавающий наэкранный HUD в виде Dynamic Island с матовым фоном (`#1c1c1e`), скругленными краями 18px, мягким белым текстом и плавной прозрачностью. |
+| **Electron / React / Tailwind** | Кросс-платформенные приложения | Полупрозрачный сайдбар `backdrop-blur-2xl`, палитра Space Black, сквирклы 16px, переключатели в стиле iOS Toggle, живые счетчики с `tnum`. |
+| **Python Tkinter / PySide / Qt** | Системные виджеты | Виджет в стиле macOS Sequoia Control Center: безрамочное матовое окно, скругленные кнопки, мягкая шкала отсчета, системные шрифты SF Pro. |
+| **Web Apps / Extensions** | Веб-интерфейсы и расширения | Парящий по центру Dynamic Island Dock с эффектом `backdrop-filter: blur(24px)`, сегментированные селекторы и тактильный `:active` отклик. |
+| **Terminal CLI (Rich / Colorama)** | Консольные утилиты | Минималистичные тонкие рамки, акцентные пастельные цвета, компактные списки без визуального мусора. |
+| **Mobile Web & Responsive** | Мобильные интерфейсы | Кликабельные зоны ≥48px, размер шрифта инпутов ≥16px (защита от нежелательного зума на iOS), безопасные зоны `env(safe-area-inset-bottom)`. |

@@ -117,10 +117,10 @@ flowchart LR
     - Deconstruct real-world decisions and strategies into core fundamental facts.
     - Offer structured, practical, high-leverage recommendations without filler text.
 
-15. **Action-Oriented Communication & Idea Analysis Standard**:
+15. **Action-Oriented Communication & Analysis Standard**:
     - For general engineering and code changes: **Summary ➔ Key Insights ➔ Action Items**.
-    - For Idea/Repository/Video Analysis in Production Hub: ALWAYS follow the golden template (`IDEA_RESPONSE_FORMAT.md`): Idea #[ID] & Title -> Card/Index links -> "О чем видео/проект простыми словами" -> "Какая польза для нашего производства программ и игр" -> "Оценка в нашей матрице" -> "Что анализируем дальше? 🚀".
-    - **Automatic Media Scratch Cleanup:** Immediately after completing an idea analysis and creating the card in `Production_Hub`, automatically delete temporary heavy media files (downloaded `.mp4`, `.m4a`, extracted `.jpg`/`.png` frames) from scratch directories to keep the user's disk clean and free of bloat.
+    - For Idea/Repository/Video Analysis: structure as: Summary -> Simple explanation -> Direct engineering utility -> Evaluation score -> Next actions.
+    - **Automatic Media Scratch Cleanup:** Immediately after completing an idea analysis or media download, automatically delete temporary heavy media files (downloaded `.mp4`, `.m4a`, extracted `.jpg`/`.png` frames) from scratch directories to keep the user's disk clean and free of bloat.
 
 16. **Strict Data Preservation**:
     - Never delete or truncate existing user data, docs, or configs without explicit instruction.

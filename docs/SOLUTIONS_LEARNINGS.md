@@ -1,22 +1,22 @@
-# 🧠 Реестр Институциональной Памяти Студии (`docs/solutions/`)
+# 🧠 General Engineering Solutions & Platform Gotchas (001–011)
 
-> **Методология:** Compound Engineering (Continuous Learning Loop)  
-> **Цель:** Исключить амнезию ИИ-агентов. Каждая инженерная сессия обогащает базу знаний.
+> **Methodology:** Compound Engineering (Continuous Learning Loop)  
+> **Goal:** Eliminate AI agent amnesia across sessions. Every engineering breakthrough or non-obvious platform quirk is captured here.
 
 ---
 
-## 📌 Реестр Решенных Задач и Платформенных Ловушек (001–011)
+## 📌 Registry of Solved Platform Gotchas & Architecture Solutions
 
-| ID | Название Урока | Стек / Компонент | Ключевой Инженерный Вывод |
+| ID | Solution Title | Stack / Domain | Key Engineering Insight |
 | :-: | :--- | :--- | :--- |
-| **001** | **Обход CORS для ES-модулей в Playwright** | Frontend / E2E / Node.js | Chromium блокирует `type="module"` по протоколу `file:///`. Решение: авто-запуск эфемерного HTTP-сервера на порту 0. |
-| **002** | **Архитектура Ralph Agent Harness** | AI Scaffolding / Git | Устранение context rot через изолированные запуски с чистым контекстом, `prd.json` и атомарную фиксацию в Git. |
-| **003** | **Калибровка Агентов по Карпатому** | AI Alignment / Code Quality | Устранение оверинжиниринга и мусора: Think First, Simplicity First, Surgical Changes, Goal-Driven. |
-| **004** | **Универсальный Мастер-Цикл Реакции (v2.5)** | AI Alignment / Master Loop | 5-фазовый канонический цикл реакции на любые запросы: пробуждение памяти, маршрутизация, шлюз, верификация. |
-| **005** | **Изоляция Тестов и Falsy-Фолбэки в Python** | Python / Testing | Запрет конструкции `arg or os.getenv()`, ломающей тесты при `arg=""`. Использовать `if arg is not None:`. |
-| **006** | **Упаковка Web-приложений в .exe с иконкой на Панели Задач** | Desktop / .NET 10 / WebView2 | Регистрация AppUserModelID до старта UI, многослойный PNG-in-ICO и SingleFile без CORS. |
-| **007** | **Устранение «кракозябр» (CP866 vs UTF-8) в Tauri / PowerShell** | Desktop / Rust / Windows | Решение бага кодировки консольных утилит (DISM/SFC): `chcp 65001` + синхронизация `OutputEncoding`. |
-| **008** | **Блокировка файлов Cargo в папках OneDrive (os error 32)** | Desktop / Rust / Cargo / Windows | Перенаправление `CARGO_TARGET_DIR` в `$env:TEMP` устраняет sharing violation и ускоряет сборку в 3-4 раза. |
-| **009** | **Ошибка «TaskDialogIndirect не найдена» в Tauri** | Desktop / Tauri 2 / Windows | В кастомный манифест обязательно добавлять зависимость от Common-Controls v6, иначе грузится `comctl32.dll` v5. |
-| **010** | **TypeError: Client.__init__() unexpected 'app' в TestClient** | Backend / Python 3.14 / HTTPX | Использование `AsyncClient(transport=ASGITransport(app=app))` устраняет несовместимость с httpx 0.28+. |
-| **011** | **Глобальный Триумвират Критиков и Скилл-Хантер (v2.6)** | AI Architecture / Multi-Agent | Устранение blind spots и AI-slop через Тройку Критиков (Скептик + Прагматик + Эксперт с авто-скиллами). |
+| **001** | **Bypassing CORS for ES Modules in Playwright** | Frontend / E2E / Node.js | Chromium blocks `type="module"` on `file:///`. Fix: spin up an ephemeral local HTTP server on port 0. |
+| **002** | **Ralph Autonomous Agent Harness Architecture** | AI Scaffolding / Git | Eliminate context rot via isolated clean-context runs, `prd.json`, and atomic git commits. |
+| **003** | **Karpathy Agent Calibration Guidelines** | AI Alignment / Code Quality | Eliminate overengineering: Think First, Simplicity First (200->50), Surgical Changes, Goal-Driven. |
+| **004** | **Universal Agent Action Algorithm (v2.6)** | AI Alignment / Master Loop | 5-phase deterministic cycle: Awakening ➔ Skill-Hunting ➔ Critic Triad ➔ Surgical Execution ➔ Compound. |
+| **005** | **Test Isolation & Falsy Fallbacks in Python** | Python / Testing | Ban `arg or os.getenv()`, which breaks tests when `arg=""`. Always use `if arg is not None:`. |
+| **006** | **Packaging Web Apps into .exe with Taskbar Icon** | Desktop / .NET 10 / WebView2 | Register AppUserModelID before UI starts; use multi-layer PNG-in-ICO and SingleFile without CORS. |
+| **007** | **Fixing Console Encoding (CP866 vs UTF-8) in Windows CLI** | Desktop / Rust / PowerShell | Fix encoding glitches in CLI tools (DISM/SFC): `chcp 65001` + synchronize `OutputEncoding`. |
+| **008** | **Cargo File Locks in Cloud Sync Folders (os error 32)** | Desktop / Rust / Cargo | Redirect `CARGO_TARGET_DIR` to `$env:TEMP` to eliminate sharing violations and speed up builds 3-4x. |
+| **009** | **Fixing TaskDialogIndirect Not Found in Tauri / Windows** | Desktop / Tauri 2 / Windows | Custom app manifest MUST declare dependency on Common-Controls v6, otherwise Windows loads legacy v5. |
+| **010** | **Fixing TypeError: Client.__init__() in TestClient** | Backend / Python 3.14 / HTTPX | Use `AsyncClient(transport=ASGITransport(app=app))` to resolve breaking changes in httpx 0.28+. |
+| **011** | **Global Critic Triad & Autonomous Skill-Hunter (v2.6)** | AI Architecture / Multi-Agent | Eliminate blind spots & AI slop via Triad of adversarial critics (Skeptic + Pragmatist + Specialist). |

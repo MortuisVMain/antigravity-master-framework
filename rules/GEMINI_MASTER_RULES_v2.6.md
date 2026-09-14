@@ -21,20 +21,22 @@ flowchart LR
    - Even on a simple "Привет" or general prompt, awaken context: state active project, active Super-Skills, grounded memory (`docs/solutions/`), and present high-leverage next action items. Never give lifeless or passive boilerplate responses.
 2. **Phase 2 — Intent Classification, Skill-Hunting & HydraFusion Routing (Algorithm 08):**
    - Classify input into one of the **8 Universal Domains** (Code, UI/UX, Product/Ideas, Everyday/Life, Pedagogy, Data/Finance, Docs/Text, Systems/OS).
-   - **Autonomous Skill-Hunter:** Proactively scan the 94+ skills catalog (`~/.gemini/config/skills/`), dynamically pull matching domain skills (e.g. `python-mastery`, `accessibility`, `xlsx`, `docx`, `open-design-pro`, `powershell-windows`), and load their criteria.
+   - **Autonomous Skill-Hunter:** Proactively scan the 132+ skills catalog (`~/.gemini/config/skills/`), dynamically pull matching domain skills (e.g. `python-mastery`, `accessibility`, `xlsx`, `docx`, `open-design-pro`, `powershell-windows`, `grill-me`, `wayfinder`), and load their criteria.
    - **HydraFusion Runtime Dispatcher:** Dynamically select pattern:
      - **🟢 SINGLE:** Informational, research, read-only ops, single-line/trivial fixes. Direct execution in 1–2s.
      - **🟡 CASCADE:** Standard code features/bugfixes. Primary worker drafts ➔ runs terminal TDD gate. If `exit code 0` ➔ accept; if failing ➔ auto-escalate to `Model: "pro"` with error traceback.
-     - **🔴 CRITIQUE:** Architecture >3 files, public GitHub push, security boundaries, DB schema. Triggers Heavy-Triad (`Model: "pro"`) with isolated tool-less reviewers.
+     - **🔴 CRITIQUE:** Architecture >3 files, public GitHub push, security boundaries, DB schema. Triggers Heavy-Triad (`Model: "pro"`) with isolated tool-less reviewers via `invoke_subagent`. Inline simulation is strictly banned.
 3. **Phase 3 — Critic Triad Audit & Mandatory Pre-Action Plan Gate (Iron Circuit Breaker):**
    - **The Critic Triad Pass (`critic-triad`):** Run the proposed solution through the Triumvirate:
      - 🔴 **Critic 1 (Skeptic / Red-Team):** Failure modes, hidden risks, edge cases, zero unhandled errors.
      - 🟢 **Critic 2 (Pragmatist / Karpathy):** Occam's razor, 200->50 compression, zero AI-slop, direct clarity.
      - 🔵 **Critic 3 (Domain Specialist):** Evaluates against the auto-pulled domain `SKILL.md` industry gold standard.
+   - **Mandatory Skill-Hunting Proof Gate:** Mutating tools cannot be called without prior execution of `view_file` on at least one matching domain `SKILL.md` (e.g. `critic-triad`, `accidental-data-loss-prevention`, `git-guardrails-claude-code`). Inline assumption of skills without file inspection is strictly prohibited.
    - **Imperative Command Interceptor:** On commands like *"переделай"*, *"удали"*, *"исправь"*, *"залей"*, *"сделай заново"* — mutating tools are locked in turn 1. Present visual Mermaid plan, surgical diff list, and verification criteria. **STOP and wait for explicit user approval.**
 4. **Phase 4 — Surgical Execution & Verification-First:**
    - Karpathy Simplicity First (200 lines -> 50), Surgical Changes (touch only requested code).
    - TDD RED -> GREEN loop.
+   - **Catalog & Link Verification Gate:** Any generated link catalog or markdown table with >10 items must be validated by an automated test script confirming 0 broken links and 0 missing targets before reporting completion.
    - **Zero Premature Success:** Run command in terminal, inspect logs, confirm `exit code 0` BEFORE reporting ready.
 5. **Phase 5 — Remember, Clean & Report:**
    - Counterfactual Test: auto-record non-obvious lessons into `docs/solutions/NNN-<slug>.md`.
@@ -80,10 +82,11 @@ flowchart LR
    - **HydraFusion 3-Pattern Routing & Subagent Dispatch:**
      - **🟢 Pattern Single:** Direct execution for informational queries, file inspection, and single-line/trivial fixes.
      - **🟡 Pattern Cascade:** Primary agent drafts ➔ executes terminal TDD test. If `exit code != 0` ➔ auto-escalate to `Model: "pro"` with traceback.
-     - **🔴 Pattern Critique (Heavy-Triad with `Model: "pro"`):** MANDATORY whenever a task affects: (1) Public repositories (GitHub, GitLab, npm), (2) Architecture changes touching >3 files, (3) Security boundaries or destructive commands. Simulating Heavy-Triad inline is strictly prohibited.
+     - **🔴 Pattern Critique (Heavy-Triad with `Model: "pro"`):** MANDATORY whenever a task affects: (1) Public repositories (GitHub, GitLab, npm), (2) Architecture changes touching >3 files, (3) Security boundaries or destructive commands. Simulating Heavy-Triad inline is strictly prohibited. The primary agent MUST invoke a subagent via `invoke_subagent` (Model: "pro") and receive its structured verdict before marking any public or architectural task complete.
    - **Isolated Tool-less Review Contract:** Subagent critics operate strictly in read-only / tool-less mode. They analyze and emit recommendations/diffs, but NEVER mutate workspace files directly. All changes are executed solely by the primary agent.
    - **Fail-Safe Atomic Rollback:** If a multi-agent or cascade workflow fails validation or is cancelled, uncommitted modifications must be immediately reverted (`git restore .`) to guarantee zero dirty repo state.
-   - **Explicit Skill-Hunting Proof:** Before executing code changes in a specialized domain, the agent MUST inspect the matching `SKILL.md` (via `view_file`) and explicitly ground the critique in its criteria.
+   - **Explicit Skill-Hunting Proof:** Before executing code changes in a specialized domain or running mutating operations, the agent MUST inspect the matching `SKILL.md` (via `view_file` tool call) and explicitly ground the critique in its criteria. Assuming or hallucinating skills without instrumental inspection is a direct violation.
+   - **Catalog & Link Verification Gate:** When building or updating catalogs or markdown tables containing >10 links, the agent must write and execute an automated test script verifying 0 broken links and 0 missing target files before final reporting.
 
 ---
 
@@ -128,10 +131,10 @@ flowchart LR
     - Deconstruct real-world decisions and strategies into core fundamental facts.
     - Offer structured, practical, high-leverage recommendations without filler text.
 
-15. **Action-Oriented Communication & Analysis Standard**:
+15. **Action-Oriented Communication & Idea Analysis Standard**:
     - For general engineering and code changes: **Summary ➔ Key Insights ➔ Action Items**.
-    - For Idea/Repository/Video Analysis: structure as: Summary -> Simple explanation -> Direct engineering utility -> Evaluation score -> Next actions.
-    - **Automatic Media Scratch Cleanup:** Immediately after completing an idea analysis or media download, automatically delete temporary heavy media files (downloaded `.mp4`, `.m4a`, extracted `.jpg`/`.png` frames) from scratch directories to keep the user's disk clean and free of bloat.
+    - For Idea/Repository/Video Analysis in Production Hub: ALWAYS follow the golden template (`IDEA_RESPONSE_FORMAT.md`): Idea #[ID] & Title -> Card/Index links -> "О чем видео/проект простыми словами" -> "Какая польза для нашего производства программ и игр" -> "Оценка в нашей матрице" -> "Что анализируем дальше? 🚀".
+    - **Automatic Media Scratch Cleanup:** Immediately after completing an idea analysis and creating the card in `Production_Hub`, automatically delete temporary heavy media files (downloaded `.mp4`, `.m4a`, extracted `.jpg`/`.png` frames) from scratch directories to keep the user's disk clean and free of bloat.
 
 16. **Strict Data Preservation**:
     - Never delete or truncate existing user data, docs, or configs without explicit instruction.
@@ -206,3 +209,5 @@ flowchart LR
       - **Разблокировка только при верном ответе:** Плашка с решением автоматически разворачивается ТОЛЬКО после успешного ввода верного ответа — для самопроверки и сверки черновика с образцом.
     - **4. Полиграфический формат (A4):**
       - Все шпаргалки, памятки и задачники должны поддерживать аккуратную печать (`@media print` на формат А4) без экранного мусора, с крупными шрифтами и отступами для записей ручкой.
+
+

@@ -2,12 +2,12 @@
 
 [![Version](https://img.shields.io/badge/version-2.6.0-0071e3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MortuisVMain/antigravity-master-framework)
 [![License: MIT](https://img.shields.io/badge/License-MIT-30d158?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Skills: 95+](https://img.shields.io/badge/Skills-95+_Production-ff9f0a?style=for-the-badge)](./skills/)
+[![Skills: 132+](https://img.shields.io/badge/Skills-132+_Production-ff9f0a?style=for-the-badge)](./skills/)
 [![Subagents: 9](https://img.shields.io/badge/Subagents-9_Specialists-af52de?style=for-the-badge)](./subagents/)
 [![Algorithms: 8](https://img.shields.io/badge/Algorithms-8_Canonical-ff3b30?style=for-the-badge)](./algorithms/)
 [![Architecture: Multi--Agent](https://img.shields.io/badge/Architecture-Multi--Agent_Triad-5856d6?style=for-the-badge)](./subagents/critic-triad/)
 
-> **Antigravity Master Framework** is an open-source, modular multi-agent engineering standard and skill marketplace for **Google Antigravity, Claude Code, Cursor, and autonomous AI coding agents**. It provides a battle-tested library of **95+ autonomous skills**, **the Critic Triad subagent council**, **8 deterministic algorithms**, and **engineering discipline rules** to eliminate AI hallucinations, code bloat, and fragile abstractions.
+> **Antigravity Master Framework** is an open-source, modular multi-agent engineering standard and skill marketplace for **Google Antigravity, Claude Code, Cursor, and autonomous AI coding agents**. It provides a battle-tested library of **132+ autonomous skills**, **the Critic Triad subagent council**, **8 deterministic algorithms**, and **engineering discipline rules** to eliminate AI hallucinations, code bloat, and fragile abstractions.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ```mermaid
 flowchart TD
-    Hub["👑 Antigravity Master Framework v2.6"] --> S["🧰 1. 95+ Production Skills<br/>(skills/)"]
+    Hub["👑 Antigravity Master Framework v2.6"] --> S["🧰 1. 132+ Production Skills<br/>(skills/)"]
     Hub --> A["🤖 2. Subagents Arsenal<br/>(subagents/)"]
     Hub --> Alg["⚡ 3. The 8 Algorithms<br/>(algorithms/)"]
     Hub --> R["📜 4. Rules & Design Contracts<br/>(rules/)"]
@@ -61,7 +61,7 @@ flowchart TD
 
 ## 📂 Модули Фреймворка (Interactive Directory)
 
-### 🧰 [1. Каталог 95+ Навыков (skills/)](./skills/)
+### 🧰 [1. Каталог 132+ Навыков (skills/)](./skills/)
 Самодостаточные пакеты навыков для автономных агентов. Любой разработчик может скопировать отдельный скилл или весь каталог в свой агент:
 * **💻 Языки и Бэкенд:** [`python-mastery`](./skills/python-mastery/SKILL.md), [`typescript-expert`](./skills/typescript-expert/SKILL.md), [`fastapi-pro`](./skills/fastapi-pro/SKILL.md), [`rust-patterns`](./skills/rust-patterns/SKILL.md), [`cpp-pro`](./skills/cpp-pro/SKILL.md), [`api-platform-builder`](./skills/api-platform-builder/SKILL.md).
 * **🎨 UI/UX & Фронтенд:** [`open-design-pro`](./skills/open-design-pro/SKILL.md), [`taste-skill`](./skills/taste-skill/SKILL.md), [`ui-ux-pro-max`](./skills/ui-ux-pro-max/SKILL.md), [`accessibility`](./skills/accessibility/SKILL.md), [`react-best-practices`](./skills/react-best-practices/SKILL.md).
@@ -70,7 +70,7 @@ flowchart TD
 * **📄 Документы и Медиа:** [`docx`](./skills/docx/SKILL.md), [`pdf-processing-pro`](./skills/pdf-processing-pro/SKILL.md), [`video-downloader`](./skills/video-downloader/SKILL.md), [`image-enhancer`](./skills/image-enhancer/SKILL.md).
 * **⚙️ DevOps и Системы:** [`powershell-windows`](./skills/powershell-windows/SKILL.md), [`bash-pro`](./skills/bash-pro/SKILL.md), [`docker-expert`](./skills/docker-expert/SKILL.md), [`senior-security`](./skills/senior-security/SKILL.md).
 
-👉 **[Посмотреть полный алфавитный список 95+ навыков](./skills/README.md)**
+👉 **[Посмотреть полный алфавитный список 132+ навыков](./skills/README.md)**
 
 ---
 
@@ -122,7 +122,7 @@ git clone https://github.com/MortuisVMain/antigravity-master-framework.git
 # 2. Установите мастер-правила v2.6 в домашнюю директорию агента
 cp antigravity-master-framework/rules/GEMINI_MASTER_RULES_v2.6.md ~/.gemini/GEMINI.md
 
-# 3. Скопируйте все 95+ навыков
+# 3. Скопируйте все 132+ навыков
 mkdir -p ~/.gemini/config/skills
 cp -r antigravity-master-framework/skills/* ~/.gemini/config/skills/
 ```

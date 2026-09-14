@@ -1,10 +1,10 @@
-# ⚡ The 7 Canonical Engineering Algorithms
+# ⚡ The 8 Canonical Engineering Algorithms
 
 Welcome to the algorithmic engine of the **Antigravity Master Framework**. These deterministic workflows govern how AI agents reason, plan, execute, verify, and debug code without human babysitting.
 
 ---
 
-## 🧭 The 7 Core Algorithms
+## 🧭 The 8 Core Algorithms
 
 | # | Algorithm | Target Phase | Focus & Mechanism | File Link |
 | :-: | :--- | :--- | :--- | :--- |
@@ -15,3 +15,4 @@ Welcome to the algorithmic engine of the **Antigravity Master Framework**. These
 | **05** | **Systematic Debugger** | Root-Cause Analysis | Hypothesis-deductive method: Symptom ➔ Testable Hypothesis ➔ Terminal Audit ➔ Failing Test ➔ Fix ➔ Green. | [`05_SYSTEMATIC_DEBUGGER.md`](./05_SYSTEMATIC_DEBUGGER.md) |
 | **06** | **Benchmark Optimization Loop** | Performance & Speed | Baseline benchmark ➔ CPU/RAM profiling ➔ Targeted optimization ➔ Verification comparison. | [`06_BENCHMARK_LOOP.md`](./06_BENCHMARK_LOOP.md) |
 | **07** | **Ralph Autonomous Execution** | Long-Running Agent Tasks | Context rot defense: atomic user stories (`prd.json`), clean-context git loops, memory handoff. | [`07_RALPH_HARNESS.md`](./07_RALPH_HARNESS.md) |
+| **08** | **HydraFusion Runtime Orchestrator** | Adaptive Dispatch | Dynamic 3-pattern execution: Single (fast), Cascade (TDD quality gate -> Pro escalation), Critique (Isolated Heavy Triad). | [`08_HYDRAFUSION_ROUTING.md`](./08_HYDRAFUSION_ROUTING.md) |

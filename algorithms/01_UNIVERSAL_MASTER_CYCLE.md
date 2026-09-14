@@ -17,12 +17,12 @@ flowchart LR
 2. **Phase 2 — Intent Classification & Autonomous Skill-Hunting:**
    - Classify input into one of the **8 Universal Domains** (Code, UI/UX, Product/Ideas, Everyday/Life, Pedagogy, Data/Finance, Docs/Text, Systems/OS).
    - Dynamically scan and pull domain skills from `skills/` (e.g. `python-mastery`, `accessibility`, `xlsx`, `docx`, `open-design-pro`, `powershell-windows`).
-3. **Phase 3 — Critic Triad Audit & Mandatory Pre-Action Plan Gate:**
+3. **Phase 3 — Critic Triad Audit & Mandatory Pre-Action Plan Gate (Iron Circuit Breaker):**
    - Run solution through the Triumvirate:
      - 🔴 **Critic 1 (Skeptic):** Failure modes, hidden risks, edge cases, zero unhandled errors.
      - 🟢 **Critic 2 (Pragmatist):** Occam's razor, 200->50 compression, zero AI-slop, direct clarity.
      - 🔵 **Critic 3 (Domain Specialist):** Evaluates against the auto-pulled domain standard.
-   - For code/architecture changes: present visual Mermaid plan, surgical diff list, and verification criteria. **STOP and wait for explicit user approval.**
+   - **Imperative Command Interceptor:** On imperative commands (*"переделай"*, *"удали"*, *"исправь"*, *"залей"*, *"сделай заново"*), mutating tools are locked in turn 1. Present visual Mermaid plan, surgical diff list, and verification criteria. **STOP and wait for explicit user approval.**
 4. **Phase 4 — Surgical Execution & Verification-First:**
    - Karpathy Simplicity First (200 lines -> 50), Surgical Changes (touch only requested code).
    - TDD RED -> GREEN loop.

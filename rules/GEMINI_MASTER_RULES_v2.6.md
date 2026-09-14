@@ -19,9 +19,13 @@ flowchart LR
 
 1. **Phase 1 — Context & Memory Awakening (Universal Greeting Protocol):**
    - Even on a simple "Привет" or general prompt, awaken context: state active project, active Super-Skills, grounded memory (`docs/solutions/`), and present high-leverage next action items. Never give lifeless or passive boilerplate responses.
-2. **Phase 2 — Intent Classification & Autonomous Skill-Hunting:**
+2. **Phase 2 — Intent Classification, Skill-Hunting & HydraFusion Routing (Algorithm 08):**
    - Classify input into one of the **8 Universal Domains** (Code, UI/UX, Product/Ideas, Everyday/Life, Pedagogy, Data/Finance, Docs/Text, Systems/OS).
    - **Autonomous Skill-Hunter:** Proactively scan the 94+ skills catalog (`~/.gemini/config/skills/`), dynamically pull matching domain skills (e.g. `python-mastery`, `accessibility`, `xlsx`, `docx`, `open-design-pro`, `powershell-windows`), and load their criteria.
+   - **HydraFusion Runtime Dispatcher:** Dynamically select pattern:
+     - **🟢 SINGLE:** Informational, research, read-only ops, single-line/trivial fixes. Direct execution in 1–2s.
+     - **🟡 CASCADE:** Standard code features/bugfixes. Primary worker drafts ➔ runs terminal TDD gate. If `exit code 0` ➔ accept; if failing ➔ auto-escalate to `Model: "pro"` with error traceback.
+     - **🔴 CRITIQUE:** Architecture >3 files, public GitHub push, security boundaries, DB schema. Triggers Heavy-Triad (`Model: "pro"`) with isolated tool-less reviewers.
 3. **Phase 3 — Critic Triad Audit & Mandatory Pre-Action Plan Gate (Iron Circuit Breaker):**
    - **The Critic Triad Pass (`critic-triad`):** Run the proposed solution through the Triumvirate:
      - 🔴 **Critic 1 (Skeptic / Red-Team):** Failure modes, hidden risks, edge cases, zero unhandled errors.
@@ -67,15 +71,18 @@ flowchart LR
    - Record pivotal architectural, library, and protocol choices in lightweight documents (`docs/adr/NNN-<title>.md`) detailing: **Context**, **Decision**, **Trade-offs Evaluated**, and **Consequences**.
    - Preserves historical rationale, preventing future agents from blindly second-guessing proven architectural decisions.
 
-6. **The Supreme Critic Triad & Autonomous Skill-Hunter Protocol (`critic-triad`)**:
+6. **The Supreme Critic Triad, Skill-Hunter & HydraFusion Protocol (`critic-triad`, `08_HYDRAFUSION_ROUTING.md`)**:
    - To eliminate AI monoculture, confirmation bias, and shallow hallucination, every non-trivial response, code modification, architecture, or everyday advisory must be vetted through the **Dialectical Triad**:
      - 🔴 **Critic 1 (Skeptic & Red-Team):** Finds what will fail, security holes, unhandled exceptions, hidden costs, and unstated assumptions.
      - 🟢 **Critic 2 (Pragmatist & Karpathy Simplifier):** Enforces Occam's Razor, 200->50 line reduction, cuts fluff, and ensures actionable brevity.
      - 🔵 **Critic 3 (Domain Specialist & Skill-Hunter):** Scans `~/.gemini/config/skills/`, dynamically pulls matching domain skills (`python-mastery`, `accessibility`, `xlsx`, `docx`, `open-design-pro`, etc.), and verifies against the domain's gold standard.
    - **The 8 Universal Domains:** The Triad applies universally across: 1. Code & Architecture, 2. UI/UX & Frontend, 3. Ideas & Business, 4. Everyday Life & Purchases, 5. Pedagogy & Schooling (Rule 23), 6. Data & Finance, 7. Documents & Writing, 8. DevOps & Systems.
-   - **Execution Modes & Mandatory Subagent Dispatch Threshold:**
-     - **Fast-Triad:** Inline multi-perspective critique for everyday questions and minor localized adjustments.
-     - **Heavy-Triad (`invoke_subagent` with `Model: "pro"`):** MANDATORY whenever a task affects: (1) Public repositories (GitHub, GitLab, npm), (2) Architecture changes touching >3 files, (3) Security boundaries or destructive commands. Simulating Heavy-Triad inline is strictly prohibited.
+   - **HydraFusion 3-Pattern Routing & Subagent Dispatch:**
+     - **🟢 Pattern Single:** Direct execution for informational queries, file inspection, and single-line/trivial fixes.
+     - **🟡 Pattern Cascade:** Primary agent drafts ➔ executes terminal TDD test. If `exit code != 0` ➔ auto-escalate to `Model: "pro"` with traceback.
+     - **🔴 Pattern Critique (Heavy-Triad with `Model: "pro"`):** MANDATORY whenever a task affects: (1) Public repositories (GitHub, GitLab, npm), (2) Architecture changes touching >3 files, (3) Security boundaries or destructive commands. Simulating Heavy-Triad inline is strictly prohibited.
+   - **Isolated Tool-less Review Contract:** Subagent critics operate strictly in read-only / tool-less mode. They analyze and emit recommendations/diffs, but NEVER mutate workspace files directly. All changes are executed solely by the primary agent.
+   - **Fail-Safe Atomic Rollback:** If a multi-agent or cascade workflow fails validation or is cancelled, uncommitted modifications must be immediately reverted (`git restore .`) to guarantee zero dirty repo state.
    - **Explicit Skill-Hunting Proof:** Before executing code changes in a specialized domain, the agent MUST inspect the matching `SKILL.md` (via `view_file`) and explicitly ground the critique in its criteria.
 
 ---

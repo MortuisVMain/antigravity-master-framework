@@ -1,7 +1,7 @@
 # 👑 Antigravity Master Framework (v2.6)
 
 [![Version](https://img.shields.io/badge/version-2.6.0-0071e3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MortuisVMain/antigravity-master-framework)
-[![License: MIT](https://img.shields.io/badge/License-MIT-30d158?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-ff3b30?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![Skills: 132+](https://img.shields.io/badge/Skills-132+_Production-ff9f0a?style=for-the-badge)](./skills/)
 [![Subagents: 9](https://img.shields.io/badge/Subagents-9_Specialists-af52de?style=for-the-badge)](./subagents/)
 [![Algorithms: 8](https://img.shields.io/badge/Algorithms-8_Canonical-ff3b30?style=for-the-badge)](./algorithms/)
@@ -141,4 +141,10 @@ mkdir -p ~/.claude/skills/critic-triad
 cp -r antigravity-master-framework/skills/critic-triad/* ~/.claude/skills/critic-triad/
 ```
 
----\n\n## 📜 Лицензия\n\nРаспространяется под свободной лицензией **MIT License**. Свободно для личного и коммерческого использования, адаптации и форков.\n
+---
+
+## 📜 Лицензия и Защита Интеллектуальной Собственности
+
+Фреймворк защищен лицензией **GNU Affero General Public License v3.0 (AGPL-3.0)**:
+* **Для разработчиков и личного использования:** Свободно, бесплатно и открыто. Вы можете изучать, адаптировать и применять правила и навыки для своих проектов.
+* **Защита от закрытия и SaaS-паразитирования:** Запрещено использовать фреймворк или его производные для развертывания закрытых коммерческих облачных сервисов или платформ без раскрытия полного исходного кода производной системы под лицензией AGPL-3.0. Любой форк обязан оставаться полностью открытым сообществу.

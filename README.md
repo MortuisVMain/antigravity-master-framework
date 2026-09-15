@@ -1,5 +1,10 @@
 # ⚡ AI Agent Superpowers (v2.6): Production Framework & Skills Arsenal
 
+<p align="center">
+  <img src="./assets/ai-agent-superpowers-banner.jpg" alt="AI Agent Superpowers Banner" width="100%">
+</p>
+
+
 [![Version](https://img.shields.io/badge/version-2.6.0-0071e3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MortuisVMain/ai-agent-superpowers)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-ff3b30?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![Skills: 132+](https://img.shields.io/badge/Skills-132+_Production-ff9f0a?style=for-the-badge)](./skills/)

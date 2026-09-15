@@ -1,6 +1,6 @@
 ---
 name: python-mastery
-description: "Master modern Python 3.12+ engineering and architecture. Fuses idiomatic Python patterns, high-performance asyncio concurrency, Pydantic V2 data validation, clean architectural structuring, and safe dependency management using uv and virtualenvs. Use when designing, writing, optimizing, or restructuring Python applications, CLI tools, async pipelines, or microservices."
+description: 'Modern Python 3.12+ engineering: asyncio concurrency, Pydantic V2 validation, clean architecture, and uv dependency workflows.'
 user-invocable: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: web-design-guidelines
-description: Review and enforce Vercel Web Interface Guidelines compliance. Checks UI code for hit targets, keyboard accessibility, focus states, hydration safety, mobile inputs, loading buttons, and anti-patterns. Use when building or reviewing UI, components, or web apps.
+description: 'Audit and enforce Vercel Web Interface Guidelines: hit targets >=48px, keyboard focus, mobile inputs >=16px, and loading states.'
 ---
 
 # Vercel Web Interface Guidelines & Audit Skill

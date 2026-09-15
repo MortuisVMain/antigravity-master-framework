@@ -1,10 +1,10 @@
-﻿---
+---
 name: seo
-description: Optimize for search engine visibility and ranking. Use when asked to "improve SEO", "optimize for search", "fix meta tags", "add structured data", "sitemap optimization", or "search engine optimization".
+description: 'Technical SEO optimization: meta tags, Open Graph, structured JSON-LD data, sitemaps, and search engine visibility.'
 license: MIT
 metadata:
   author: web-quality-skills
-  version: "1.0"
+  version: '1.0'
 ---
 
 # SEO optimization

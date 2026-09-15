@@ -1,6 +1,6 @@
 ---
 name: critic-triad
-description: "Global 3-Critic Supreme Council & Autonomous Skill-Hunter. Dynamically summons a Triad of adversarial critics (1: Red-Team Skeptic, 2: Karpathy Pragmatist, 3: Domain Specialist with auto-pulled skills) for any request, code, plan, architecture, or everyday decision across all workspaces and Antigravity IDE."
+description: 'Global 3-Critic Supreme Council: Red-Team Skeptic, Karpathy Pragmatist, and Domain Specialist for any code, plan, or decision.'
 user-invocable: true
 ---
 

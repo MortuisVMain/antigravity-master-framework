@@ -1,6 +1,6 @@
 ---
 name: code-reviewer-pro
-description: "Master code review, refactoring, and code simplification engine. Fuses Clean Code standards (SOLID, DRY, immutability), Multi-Agent review criteria (security OWASP, silent failure hunting), radical code reduction pass (200 lines -> 50), and Karpathy surgical precision. Use when reviewing code, preparing pull requests, auditing security, or simplifying complex logic."
+description: 'Master code review engine: Clean Code, Karpathy 200->50 compression, OWASP security audit, and silent failure hunting.'
 user-invocable: true
 ---
 

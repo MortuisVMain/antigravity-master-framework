@@ -1,6 +1,6 @@
 ---
 name: systematic-debugger
-description: "Master systematic debugging and error diagnosis engine. Fuses first-principles root cause analysis, reproducible test creation (TDD RED), Karpathy surgical fixes, and auto-recording lessons into docs/solutions/. Use proactively whenever encountering any bug, runtime exception, unexpected behavior, or test failure."
+description: 'Systematic debugging: first-principles root cause analysis, reproducible failing tests (RED), and surgical fixes (GREEN).'
 user-invocable: true
 ---
 

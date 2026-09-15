@@ -1,7 +1,7 @@
 ---
 name: ce-explain
-description: "Create a durable visual teaching artifact for something worth learning. Use when the user wants to be taught, wants a deep explainer, wants to understand a substantial change, or wants a work recap built for retention. Not for ordinary Q&A, operational diagnosis, or a concise trade-off that belongs in chat. For learning, not repo docs or verdicts."
-argument-hint: "[a concept, a diff ref, an idea, or 'what happened this week?'] — or invoke bare to be asked"
+description: Create a durable visual teaching artifact and deep explainer for complex changes, architecture, or concepts.
+argument-hint: '[a concept, a diff ref, an idea, or ''what happened this week?''] — or invoke bare to be asked'
 ---
 
 # Explain It To Me

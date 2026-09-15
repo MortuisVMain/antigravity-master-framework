@@ -1,7 +1,7 @@
 ---
 name: ce-pov
-description: "Give a decisive, project-grounded point of view: a graded verdict on an external-adoption question, a holistic take on a document, or a position on a supplied approach set. Use for a solo POV. Use when asked to consult other models, reconcile their opinions, or `oracle`. Not for findings review (use ce-doc-review), neutral explainers, or generating options (use ce-ideate or ce-brainstorm)."
-argument-hint: "[question, document, or approaches] [cross-check] — or bare"
+description: Provide a decisive, grounded point of view or graded verdict on technology adoption, architecture choices, or documents.
+argument-hint: '[question, document, or approaches] [cross-check] — or bare'
 ---
 
 # Form a Point of View

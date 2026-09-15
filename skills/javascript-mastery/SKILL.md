@@ -1,6 +1,6 @@
-﻿---
+---
 name: javascript-mastery
-description: "Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced patterns like async/await and functional programming. Use when explaining JS concepts, debugging JavaScript issues, or teaching JavaScript fundamentals."
+description: 'Deep JavaScript reference: closures, event loop, async/await, prototypes, functional patterns, and performance tuning.'
 ---
 
 # рџ§  JavaScript Mastery

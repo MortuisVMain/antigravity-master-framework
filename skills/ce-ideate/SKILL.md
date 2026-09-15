@@ -1,8 +1,7 @@
 ---
 name: ce-ideate
-description: "Generate and evaluate grounded ideas. Use when the user wants ideas, improvements, or surprising directions before choosing one to develop. Not for refining an idea they already have (ce-brainstorm) or judging one already on the table (ce-pov)."
-argument-hint: "[feature, focus area, or constraint] [output:md]"
-
+description: Generate and evaluate grounded product ideas, creative directions, and architectural improvements before planning.
+argument-hint: '[feature, focus area, or constraint] [output:md]'
 ---
 
 # Generate Improvement Ideas

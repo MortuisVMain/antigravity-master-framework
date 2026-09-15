@@ -1,7 +1,7 @@
 ---
 name: lfg
-description: "Run the full autonomous shipping pipeline end-to-end, hands-off with no check-ins. Use only when the user explicitly asks to build or ship something autonomously all the way to an open PR, or invokes lfg directly — it pushes and opens a PR without stopping. Not for in-the-loop work where the user reviews each step: use ce-plan, ce-work, ce-debug, or ce-commit-push-pr instead."
-argument-hint: "[feature description; optionally assign planning and/or implementation to a model or harness]"
+description: 'Run autonomous shipping pipeline end-to-end: build, verify, commit, push, and open a pull request without stopping.'
+argument-hint: '[feature description; optionally assign planning and/or implementation to a model or harness]'
 ---
 
 CRITICAL: You MUST execute every step below IN ORDER. Do NOT jump ahead to coding or implementation. The plan phase (step 1) MUST be completed and verified BEFORE any work begins.

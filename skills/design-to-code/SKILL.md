@@ -1,6 +1,6 @@
-﻿---
+---
 name: design-to-code
-description: Pixel-perfect Figma to React conversion using coderio. Generates production-ready code (TypeScript, Vite, TailwindCSS V4) with high visual fidelity. Features robust error handling, checkpoint recovery, and streamlined execution via helper script.
+description: Convert Figma designs into production-ready React, TypeScript, and Tailwind CSS components with high visual fidelity.
 ---
 
 # Design to Code

@@ -1,6 +1,6 @@
-﻿---
-name: "playwright"
-description: "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script."
+---
+name: playwright
+description: End-to-end browser automation, UI testing, form interaction, screenshot capture, and visual validation via Playwright.
 author: openai
 ---
 

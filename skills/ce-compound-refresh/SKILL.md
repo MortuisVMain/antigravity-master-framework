@@ -1,7 +1,7 @@
 ---
 name: ce-compound-refresh
-description: Refresh the repo's captured learnings against the current codebase. Use when auditing stale, overlapping, superseded, or drifted learnings; avoid general refactor, debugging, or code review unless the learnings store is explicit.
-argument-hint: "[optional: scope hint — directory, filename, module, or keyword] [mode:non-interactive] "
+description: Audit, refresh, and deduplicate repository learnings in docs/solutions/ against the current codebase state.
+argument-hint: '[optional: scope hint — directory, filename, module, or keyword] [mode:non-interactive] '
 ---
 
 # Compound Refresh

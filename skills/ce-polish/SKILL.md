@@ -1,8 +1,8 @@
 ---
 name: ce-polish
-description: "Polish a working feature through user-directed live browser feedback. Use when a functional feature needs focused UX refinement before shipping."
+description: Polish and refine user-facing features through interactive browser inspection and styling tweaks.
 disable-model-invocation: true
-argument-hint: "[PR number, branch name, or blank for current branch]"
+argument-hint: '[PR number, branch name, or blank for current branch]'
 ---
 
 # Polish

@@ -1,9 +1,6 @@
 ---
 name: skill-repair
-description: |
-  Use this to fix and re-install agent skills that have failed installation.
-  This skill provides the necessary context and permissions to surgically update
-  the `manifest.json` after a fix has been applied.
+description: Diagnose, fix, and reinstall corrupted or failed agent skills and repair manifest.json entries.
 license: Apache-2.0
 metadata:
   version: v1

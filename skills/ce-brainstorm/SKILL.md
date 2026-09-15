@@ -1,7 +1,7 @@
 ---
 name: ce-brainstorm
-description: "Explore vague or ambitious ideas into a right-sized requirements-only unified plan. Use when the user wants to brainstorm, scope what to build, or needs collaborative product framing before planning. Also use when they must scope work in territory they do not know, or ask for a blindspot pass. Not for executing already-specified work — implementation, debugging, or code review with no product scope left to decide. Not for a verdict on whether to adopt or switch to a named external technology, library, or platform; that is ce-pov."
-argument-hint: "[feature idea or problem to explore] [output:html]"
+description: Explore vague ideas into requirements, design alternatives, tradeoffs, and a unified plan before implementation.
+argument-hint: '[feature idea or problem to explore] [output:html]'
 ---
 
 # Brainstorm a Feature or Improvement

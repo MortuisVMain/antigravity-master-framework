@@ -1,6 +1,6 @@
 ---
 name: open-design-pro
-description: "Master design engineering and anti-slop frontend engine. Fuses DESIGN.md token contracts (OKLCH, typography, elevation), Taste-driven aesthetics, 21st.dev & shadcn components, Vercel Web Interface Guidelines (hit targets >=48px, inputs >=16px), spring physics motion, and Playwright verification. Use when designing, building, or styling web interfaces, dashboards, landing pages, game launchers, or UI components."
+description: 'Design engineering engine: DESIGN.md token contracts, OKLCH, tactile UI, 21st.dev components, and Playwright verification.'
 user-invocable: true
 ---
 

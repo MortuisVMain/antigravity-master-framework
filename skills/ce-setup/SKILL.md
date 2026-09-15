@@ -1,6 +1,6 @@
 ---
 name: ce-setup
-description: "Check Compound Engineering health and repo-local config."
+description: Check Compound Engineering health and repo-local config.
 disable-model-invocation: true
 ---
 

@@ -1,6 +1,6 @@
-﻿---
+---
 name: screenshot-feature-extractor
-description: "Analyze product screenshots to extract feature lists and generate development task checklists. Use when: (1) Analyzing competitor product screenshots for feature extraction, (2) Generating PRD/task lists from UI designs, (3) Batch analyzing multiple app screens, (4) Conducting competitive analysis from visual references."
+description: Analyze product screenshots and competitor UIs to extract feature lists and generate actionable development tasks.
 ---
 
 Extract product features from UI screenshots using a coordinated multi-agent analysis pipeline.

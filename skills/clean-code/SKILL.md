@@ -1,6 +1,6 @@
 ---
 name: clean-code
-description: Baseline cross-project coding conventions for naming, readability, immutability, and code-quality review. Use detailed frontend or backend skills for framework-specific patterns. Use when reviewing code quality or naming with no framework-specific skill that applies.
+description: 'Baseline coding conventions: SOLID, DRY, clear naming, readability, immutability, and modular separation of concerns.'
 metadata:
   origin: ECC
 ---

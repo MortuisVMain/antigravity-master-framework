@@ -1,4 +1,4 @@
-﻿---
+---
 name: api-platform-builder
 description: Master REST API design, FastAPI/Flask microservices, OpenAPI contracts, Pydantic V2 validation, JWT auth, and API stress testing.
 ---

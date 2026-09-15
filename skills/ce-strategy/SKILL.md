@@ -1,7 +1,7 @@
 ---
 name: ce-strategy
-description: "Create or update STRATEGY.md. Use when starting a product, adding a strategy doc to an existing repo, changing direction or roadmap, or when ce-ideate, ce-brainstorm, or ce-plan need upstream product grounding."
-argument-hint: "[optional: section to revisit, e.g. 'metrics' or 'approach']"
+description: Create or update STRATEGY.md for product vision, roadmaps, and high-level strategic alignment.
+argument-hint: '[optional: section to revisit, e.g. ''metrics'' or ''approach'']'
 ---
 
 # Product Strategy

@@ -1,6 +1,6 @@
 ---
 name: execution-planner
-description: "Master engineering execution planner and architectural design engine. Fuses proactive requirement grilling (/grill-me mode), trade-off evaluation, visual Mermaid architecture modeling, and granular verifiable action plans with checkpoints (exit code 0). Use before modifying code on any non-trivial feature, architectural refactoring, or multi-step workflow."
+description: 'Engineering execution planning: /grill-me requirements grilling, trade-off evaluation, Mermaid diagrams, and exit code 0 gates.'
 user-invocable: true
 ---
 

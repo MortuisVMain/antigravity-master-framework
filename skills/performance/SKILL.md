@@ -1,10 +1,10 @@
-﻿---
+---
 name: performance
-description: Optimize web performance for faster loading and better user experience. Use when asked to "speed up my site", "optimize performance", "reduce load time", "fix slow loading", "improve page speed", or "performance audit".
+description: 'Web performance optimization: bundle size reduction, asset caching, lazy loading, and runtime speed improvements.'
 license: MIT
 metadata:
   author: web-quality-skills
-  version: "1.0"
+  version: '1.0'
 ---
 
 # Performance optimization

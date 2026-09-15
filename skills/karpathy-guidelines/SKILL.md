@@ -1,6 +1,6 @@
 ---
 name: karpathy-guidelines
-description: "Enforce Andrej Karpathy's 4 core coding principles: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution. Use when writing code, refactoring, fixing bugs, or preventing overengineering, bloated abstractions, silent assumptions, and collateral edits."
+description: 'Enforce Andrej Karpathy''s 4 principles: Think Before Coding, Simplicity First (200->50), Surgical Changes, and Goal-Driven.'
 user-invocable: true
 ---
 

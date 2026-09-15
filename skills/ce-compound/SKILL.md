@@ -1,7 +1,7 @@
 ---
 name: ce-compound
-description: Document a solved problem as a durable repo learning. Use when verified work produced non-obvious reasoning absent from its final code, tests, or existing docs; avoid routine fixes whose artifacts already explain the lesson.
-argument-hint: "[optional: brief context] [mode:non-interactive] [depth:lightweight|full]"
+description: Document non-obvious engineering solutions and platform gotchas into docs/solutions/ as durable institutional memory.
+argument-hint: '[optional: brief context] [mode:non-interactive] [depth:lightweight|full]'
 ---
 
 # /ce-compound

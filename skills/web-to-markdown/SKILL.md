@@ -1,6 +1,6 @@
-﻿---
+---
 name: web-to-markdown
-description: "Use ONLY when the user explicitly says: 'use the skill web-to-markdown ...' (or 'use a skill web-to-markdown ...'). Converts webpage URLs to clean Markdown by calling the local web2md CLI (Puppeteer + Readability), suitable for JS-rendered pages."
+description: Fetch and convert web pages into clean Markdown using headless browser rendering (web2md CLI).
 metadata:
   version: 0.1.0
 ---

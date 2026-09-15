@@ -1,4 +1,4 @@
-﻿---
+---
 name: devops-and-cloud
 description: Docker containerization, multi-stage builds, docker-compose orchestration, GitHub Actions CI/CD pipelines, and cloud deployments.
 ---

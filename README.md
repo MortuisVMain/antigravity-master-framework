@@ -1,6 +1,6 @@
-# 👑 Antigravity Master Framework (v2.6)
+# ⚡ AI Agent Superpowers (v2.6): Production Framework & Skills Arsenal
 
-[![Version](https://img.shields.io/badge/version-2.6.0-0071e3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MortuisVMain/antigravity-master-framework)
+[![Version](https://img.shields.io/badge/version-2.6.0-0071e3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/MortuisVMain/ai-agent-superpowers)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-ff3b30?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![Skills: 132+](https://img.shields.io/badge/Skills-132+_Production-ff9f0a?style=for-the-badge)](./skills/)
 [![Subagents: 9](https://img.shields.io/badge/Subagents-9_Specialists-af52de?style=for-the-badge)](./subagents/)
@@ -117,28 +117,28 @@ flowchart TD
 ### Вариант 1: Установить всё целиком в свой Antigravity Agent
 ```bash
 # 1. Клонируйте репозиторий
-git clone https://github.com/MortuisVMain/antigravity-master-framework.git
+git clone https://github.com/MortuisVMain/ai-agent-superpowers.git
 
 # 2. Установите мастер-правила v2.6 в домашнюю директорию агента
-cp antigravity-master-framework/rules/GEMINI_MASTER_RULES_v2.6.md ~/.gemini/GEMINI.md
+cp ai-agent-superpowers/rules/GEMINI_MASTER_RULES_v2.6.md ~/.gemini/GEMINI.md
 
 # 3. Скопируйте все 132+ навыков
 mkdir -p ~/.gemini/config/skills
-cp -r antigravity-master-framework/skills/* ~/.gemini/config/skills/
+cp -r ai-agent-superpowers/skills/* ~/.gemini/config/skills/
 ```
 
 ### Вариант 2: Взять только один конкретный навык (например, `critic-triad` или `open-design-pro`)
 ```bash
 # Скопируйте нужную папку в свой каталог навыков
 mkdir -p ~/.gemini/config/skills/critic-triad
-cp -r antigravity-master-framework/skills/critic-triad/* ~/.gemini/config/skills/critic-triad/
+cp -r ai-agent-superpowers/skills/critic-triad/* ~/.gemini/config/skills/critic-triad/
 ```
 
 ### Вариант 3: Использование в Claude Code / Cursor
 ```bash
 # Скопируйте нужный скилл в директорию навыков Claude Code:
 mkdir -p ~/.claude/skills/critic-triad
-cp -r antigravity-master-framework/skills/critic-triad/* ~/.claude/skills/critic-triad/
+cp -r ai-agent-superpowers/skills/critic-triad/* ~/.claude/skills/critic-triad/
 ```
 
 ---
